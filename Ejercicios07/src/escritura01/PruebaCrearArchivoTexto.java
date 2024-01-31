@@ -8,6 +8,8 @@ public class PruebaCrearArchivoTexto {
     public static void main(String args[]) {
         Scanner entrada = new Scanner(System.in);
         String cadenaFinal = "";
+        for (int i = 0; i < 3; i++) {
+            
         
         System.out.println("Ingrese su nombre");
         String nombre = entrada.nextLine();
@@ -15,10 +17,11 @@ public class PruebaCrearArchivoTexto {
         String apellido = entrada.nextLine();
         System.out.println("Ingrese su edad");
         int edad = entrada.nextInt();
+        entrada.nextLine();
         
         cadenaFinal = String.format("%s%s %s %d\n", cadenaFinal, nombre, 
                 apellido, edad);
-        
+        }
         CrearArchivoTexto.agregarRegistros(cadenaFinal);
         
 
